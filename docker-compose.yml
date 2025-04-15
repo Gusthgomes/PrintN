@@ -3,7 +3,7 @@ version: "3"
 services:
   postgres:
     image: postgres:latest
-    container_name: legacy-postgres
+    container_name: printn-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
