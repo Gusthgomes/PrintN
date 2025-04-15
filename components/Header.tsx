@@ -1,6 +1,7 @@
 import { Camera, User } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import { Card } from './ui/card';
 import {
     Sheet,
     SheetContent,
@@ -15,11 +16,11 @@ import {
 
 export default function Header() {
     return (
-        <header className="border-b bg-background">
-            <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <Card className="border-b bg-blue-500">
+            <div className="container mx-auto flex h-10 items-center justify-between px-4">
 
                 <div className="flex items-center gap-2">
-                    <Camera className="h-6 w-6 text-indigo-600" />
+                    <Camera className="h-7 w-7 text-indigo-600 fill-white" />
                     <h1 className="text-xl font-bold text-foreground">printN</h1>
                 </div>
 
@@ -83,6 +84,6 @@ export default function Header() {
                     </Sheet>
                 </div>
             </div>
-        </header>
+        </Card>
     );
 }
